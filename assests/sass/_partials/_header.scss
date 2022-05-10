@@ -1,0 +1,29 @@
+@import './variables';
+header {
+    padding: 10px 15px;
+    background: $e2m-black;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navigation {
+    li {
+        padding: 10px 15px;
+        margin: 0 10px;
+        border-radius: 5px;
+        transition: $transition0_5;
+        a {
+            color: $e2m-white;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: capitalize;
+            // font-family: 
+            font-weight: 500;
+        }
+        &:hover {
+            background: $e2m-orange;
+        }
+    }
+}

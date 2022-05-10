@@ -1,0 +1,20 @@
+/*
+Theme Name: Easy2migrate
+Version: 1.0.0
+Author: Bhaskar Bhakt
+Author URI : https://in.linkedin.com/in/bhaskarbhakt
+Description: Wodpress Blog, Bootstrap, Custom Theme.
+Tags: Blogs, Theme, Bootstrap.
+Text Domain: easy2migrate
+*/
+
+@import "compass";
+@import "compass/reset";
+//import sass
+@import "./_partials/variables";
+@import './_partials/header';
+h1 {
+    font-size: $heading-font-size;
+    color: red;
+    line-height: 10px;
+}

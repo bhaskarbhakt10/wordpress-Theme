@@ -22,10 +22,10 @@ add_action( 'wp_enqueue_scripts' ,'easy2migrate_styles' );
 // scripts loaded
 function easy2migrate_scripts(){
 
-    wp_enqueue_script( 'bootstrap_js', get_template_directory_uri(  ). '/assests/js/bootstrap.bundle.min.js' ,array(), '1.1', 'true' );
+    wp_register_script( 'bootstrap_js', get_template_directory_uri(  ). '/assests/js/bootstrap.bundle.min.js' ,array(), '1.1', 'true' );
     wp_enqueue_script( 'bootstrap_js' );
     
-    wp_enqueue_script( 'main_js', get_template_directory_uri(  ). '/assests/js/main.js' ,array('jquery'), '1.1', 'true' );
-    
+    wp_register_script( 'main_js', get_template_directory_uri(  ). '/assests/js/main.js' ,array('jquery'), '1.1', 'true' );
+    wp_enqueue_script( 'main_js' );
 }
 add_action( 'wp_enqueue_scripts' ,'easy2migrate_scripts' );
